@@ -8,11 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		A25B35EF1C87E67F008DE5D0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A25B35EE1C87E67F008DE5D0 /* AppDelegate.swift */; };
-		A25B35F11C87E67F008DE5D0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A25B35F01C87E67F008DE5D0 /* ViewController.swift */; };
+		A25B35F11C87E67F008DE5D0 /* ShelterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A25B35F01C87E67F008DE5D0 /* ShelterViewController.swift */; };
 		A25B35F41C87E67F008DE5D0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A25B35F21C87E67F008DE5D0 /* Main.storyboard */; };
 		A25B35F61C87E67F008DE5D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A25B35F51C87E67F008DE5D0 /* Assets.xcassets */; };
 		A25B35F91C87E67F008DE5D0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A25B35F71C87E67F008DE5D0 /* LaunchScreen.storyboard */; };
 		A25B36041C87E67F008DE5D0 /* DelegationsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A25B36031C87E67F008DE5D0 /* DelegationsTests.swift */; };
+		A25B360F1C87EAF5008DE5D0 /* Pet.swift in Sources */ = {isa = PBXBuildFile; fileRef = A25B360E1C87EAF5008DE5D0 /* Pet.swift */; };
+		A25B36111C880125008DE5D0 /* PetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A25B36101C880125008DE5D0 /* PetViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,7 +30,7 @@
 /* Begin PBXFileReference section */
 		A25B35EB1C87E67F008DE5D0 /* Delegations.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Delegations.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A25B35EE1C87E67F008DE5D0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A25B35F01C87E67F008DE5D0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A25B35F01C87E67F008DE5D0 /* ShelterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShelterViewController.swift; sourceTree = "<group>"; };
 		A25B35F31C87E67F008DE5D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A25B35F51C87E67F008DE5D0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A25B35F81C87E67F008DE5D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -36,6 +38,8 @@
 		A25B35FF1C87E67F008DE5D0 /* DelegationsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DelegationsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A25B36031C87E67F008DE5D0 /* DelegationsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DelegationsTests.swift; sourceTree = "<group>"; };
 		A25B36051C87E67F008DE5D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A25B360E1C87EAF5008DE5D0 /* Pet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pet.swift; sourceTree = "<group>"; };
+		A25B36101C880125008DE5D0 /* PetViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PetViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,8 +82,10 @@
 			isa = PBXGroup;
 			children = (
 				A25B35EE1C87E67F008DE5D0 /* AppDelegate.swift */,
-				A25B35F01C87E67F008DE5D0 /* ViewController.swift */,
+				A25B35F01C87E67F008DE5D0 /* ShelterViewController.swift */,
+				A25B36101C880125008DE5D0 /* PetViewController.swift */,
 				A25B35F21C87E67F008DE5D0 /* Main.storyboard */,
+				A25B360E1C87EAF5008DE5D0 /* Pet.swift */,
 				A25B35F51C87E67F008DE5D0 /* Assets.xcassets */,
 				A25B35F71C87E67F008DE5D0 /* LaunchScreen.storyboard */,
 				A25B35FA1C87E67F008DE5D0 /* Info.plist */,
@@ -197,7 +203,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A25B35F11C87E67F008DE5D0 /* ViewController.swift in Sources */,
+				A25B360F1C87EAF5008DE5D0 /* Pet.swift in Sources */,
+				A25B35F11C87E67F008DE5D0 /* ShelterViewController.swift in Sources */,
+				A25B36111C880125008DE5D0 /* PetViewController.swift in Sources */,
 				A25B35EF1C87E67F008DE5D0 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
