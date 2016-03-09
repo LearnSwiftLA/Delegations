@@ -38,6 +38,14 @@ class ShelterViewController: UIViewController, PetContainer {
         }
     }
     
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        if let indexPath = tableView.indexPathForSelectedRow {
+            tableView.deselectRowAtIndexPath(indexPath, animated: true)
+        }
+    }
+
     override func viewDidDisappear(animated: Bool) {
         super.viewDidDisappear(animated)
         

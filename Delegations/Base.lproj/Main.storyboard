@@ -78,27 +78,27 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="og8-dV-EwJ">
-                                <rect key="frame" x="279" y="290" width="42" height="21"/>
+                                <rect key="frame" x="279" y="84" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cxe-8N-1q3">
-                                <rect key="frame" x="279" y="331" width="42" height="30"/>
+                                <rect key="frame" x="279" y="125" width="42" height="30"/>
                                 <state key="normal" title="Adopt"/>
                                 <connections>
                                     <segue destination="5EI-Qy-erc" kind="unwind" unwindAction="performActionOnPet:" id="P48-gX-8RZ"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b0d-5G-2KC">
-                                <rect key="frame" x="285" y="381" width="30" height="30"/>
+                                <rect key="frame" x="285" y="175" width="30" height="30"/>
                                 <state key="normal" title="Pet"/>
                                 <connections>
                                     <segue destination="5EI-Qy-erc" kind="unwind" unwindAction="performActionOnPet:" id="L6C-Ev-kN2"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OJN-9b-aOh">
-                                <rect key="frame" x="252" y="431" width="96" height="30"/>
+                                <rect key="frame" x="252" y="225" width="96" height="30"/>
                                 <state key="normal" title="Get Pet Name"/>
                                 <connections>
                                     <action selector="getPetName:" destination="QbY-X1-PMk" eventType="touchUpInside" id="5N5-4M-7dc"/>
@@ -107,9 +107,9 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="og8-dV-EwJ" firstAttribute="centerY" secondItem="mg1-je-Qg6" secondAttribute="centerY" id="Hev-tw-mgC"/>
                             <constraint firstItem="b0d-5G-2KC" firstAttribute="centerX" secondItem="cxe-8N-1q3" secondAttribute="centerX" id="N6I-ts-RvP"/>
                             <constraint firstItem="cxe-8N-1q3" firstAttribute="top" secondItem="og8-dV-EwJ" secondAttribute="bottom" constant="20" id="Trc-Id-HlR"/>
+                            <constraint firstItem="og8-dV-EwJ" firstAttribute="top" secondItem="sTR-MX-o5b" secondAttribute="bottom" constant="20" id="YP0-hn-eil"/>
                             <constraint firstItem="cxe-8N-1q3" firstAttribute="centerX" secondItem="og8-dV-EwJ" secondAttribute="centerX" id="eZR-Ma-1Rf"/>
                             <constraint firstItem="b0d-5G-2KC" firstAttribute="top" secondItem="cxe-8N-1q3" secondAttribute="bottom" constant="20" id="fGk-mt-5ff"/>
                             <constraint firstItem="og8-dV-EwJ" firstAttribute="centerX" secondItem="mg1-je-Qg6" secondAttribute="centerX" id="nmX-Jf-R9H"/>
