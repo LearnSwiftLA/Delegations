@@ -25,14 +25,14 @@
                                         <rect key="frame" x="0.0" y="92" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="NHU-Iv-SGC" id="yqx-aS-0yy">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="gly-qo-Guq">
-                                                    <rect key="frame" x="15" y="0.0" width="570" height="43.5"/>
+                                                    <rect key="frame" x="15" y="0.0" width="570" height="43"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -78,24 +78,27 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="og8-dV-EwJ">
-                                <rect key="frame" x="279" y="289.5" width="42" height="20.5"/>
+                                <rect key="frame" x="279" y="290" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cxe-8N-1q3">
-                                <rect key="frame" x="279" y="330" width="42" height="30"/>
+                                <rect key="frame" x="279" y="331" width="42" height="30"/>
                                 <state key="normal" title="Adopt"/>
                                 <connections>
                                     <segue destination="5EI-Qy-erc" kind="unwind" unwindAction="performActionOnPet:" id="P48-gX-8RZ"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b0d-5G-2KC">
-                                <rect key="frame" x="285" y="380" width="30" height="30"/>
+                                <rect key="frame" x="285" y="381" width="30" height="30"/>
                                 <state key="normal" title="Pet"/>
+                                <connections>
+                                    <segue destination="5EI-Qy-erc" kind="unwind" unwindAction="performActionOnPet:" id="L6C-Ev-kN2"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OJN-9b-aOh">
-                                <rect key="frame" x="252" y="418" width="96" height="30"/>
+                                <rect key="frame" x="252" y="431" width="96" height="30"/>
                                 <state key="normal" title="Get Pet Name"/>
                                 <connections>
                                     <action selector="getPetName:" destination="QbY-X1-PMk" eventType="touchUpInside" id="5N5-4M-7dc"/>
@@ -111,7 +114,7 @@
                             <constraint firstItem="b0d-5G-2KC" firstAttribute="top" secondItem="cxe-8N-1q3" secondAttribute="bottom" constant="20" id="fGk-mt-5ff"/>
                             <constraint firstItem="og8-dV-EwJ" firstAttribute="centerX" secondItem="mg1-je-Qg6" secondAttribute="centerX" id="nmX-Jf-R9H"/>
                             <constraint firstItem="OJN-9b-aOh" firstAttribute="centerX" secondItem="b0d-5G-2KC" secondAttribute="centerX" id="p6h-gf-PoR"/>
-                            <constraint firstItem="OJN-9b-aOh" firstAttribute="top" secondItem="b0d-5G-2KC" secondAttribute="bottom" constant="8" id="sGK-iO-rIE"/>
+                            <constraint firstItem="OJN-9b-aOh" firstAttribute="top" secondItem="b0d-5G-2KC" secondAttribute="bottom" constant="20" id="sGK-iO-rIE"/>
                         </constraints>
                     </view>
                     <connections>
@@ -127,7 +130,6 @@
         <!--Navigation Controller-->
         <scene sceneID="SNA-jH-qcb">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="i31-fe-leS" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Jqi-uN-XiC" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="gB7-Ae-3po">
@@ -139,6 +141,7 @@
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="xFI-pe-PyU"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="i31-fe-leS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="286" y="387"/>
         </scene>

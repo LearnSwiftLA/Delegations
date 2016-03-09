@@ -27,6 +27,7 @@ class PetViewController: UIViewController, PetContainer {
         }
     }
     
+    // Manually call segue
     @IBAction func getPetName(sender: UIButton) {
         performSegueWithIdentifier("PetSegue", sender: sender)
     }

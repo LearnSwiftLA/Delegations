@@ -26,7 +26,8 @@ class ShelterViewController: UIViewController, PetContainer {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        shelter.didChangePets = updateViews
+        shelter.didChangePets = didChangePets
+        shelter.delegate = self
     }
     
     override func viewWillAppear(animated: Bool) {
@@ -54,12 +55,15 @@ class ShelterViewController: UIViewController, PetContainer {
         }
     }
     
+    // Unwind Segue
     @IBAction func performActionOnPet(segue: UIStoryboardSegue) {
         print("perform action on pet")
     }
-    
-    func updateViews(pets: [Pet]) {
-        print("change pets")
+}
+
+extension ShelterViewController: ShelterDelegate {
+    func didChangePets(pets: [Pet]) {
+        print("Pets updated: \(pets)")
     }
 }
 

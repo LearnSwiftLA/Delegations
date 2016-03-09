@@ -81,14 +81,11 @@
 		A25B35ED1C87E67F008DE5D0 /* Delegations */ = {
 			isa = PBXGroup;
 			children = (
-				A25B35EE1C87E67F008DE5D0 /* AppDelegate.swift */,
+				A25B360E1C87EAF5008DE5D0 /* Pet.swift */,
 				A25B35F01C87E67F008DE5D0 /* ShelterViewController.swift */,
 				A25B36101C880125008DE5D0 /* PetViewController.swift */,
 				A25B35F21C87E67F008DE5D0 /* Main.storyboard */,
-				A25B360E1C87EAF5008DE5D0 /* Pet.swift */,
-				A25B35F51C87E67F008DE5D0 /* Assets.xcassets */,
-				A25B35F71C87E67F008DE5D0 /* LaunchScreen.storyboard */,
-				A25B35FA1C87E67F008DE5D0 /* Info.plist */,
+				A2683C9D1C90D218001FE287 /* Stuff */,
 			);
 			path = Delegations;
 			sourceTree = "<group>";
@@ -100,6 +97,17 @@
 				A25B36051C87E67F008DE5D0 /* Info.plist */,
 			);
 			path = DelegationsTests;
+			sourceTree = "<group>";
+		};
+		A2683C9D1C90D218001FE287 /* Stuff */ = {
+			isa = PBXGroup;
+			children = (
+				A25B35F51C87E67F008DE5D0 /* Assets.xcassets */,
+				A25B35F71C87E67F008DE5D0 /* LaunchScreen.storyboard */,
+				A25B35FA1C87E67F008DE5D0 /* Info.plist */,
+				A25B35EE1C87E67F008DE5D0 /* AppDelegate.swift */,
+			);
+			name = Stuff;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -396,6 +404,7 @@
 				A25B360A1C87E67F008DE5D0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A25B360B1C87E67F008DE5D0 /* Build configuration list for PBXNativeTarget "DelegationsTests" */ = {
 			isa = XCConfigurationList;
@@ -404,6 +413,7 @@
 				A25B360D1C87E67F008DE5D0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
